@@ -5,7 +5,7 @@ Onze cmdi records hadden een aantal syntax errors (op xml schema niveau). Dit sc
 Je gebruikt het als volgt:
 
 ```
-docker run -it -e PGDATABASE=oaipmh -e PGUSER=theUser -e PGPASSWD=s0mep4ssw3rd huygensing/cmdifix
+docker run -it -e PGDATABASE=oaipmh -e PGUSER=theUser -e PGPASSWD=s0mep4ssw3rd  PGHOST=postgres-server huygensing/cmdi-fix-script
 ```
 
 na afloop kun je het resultaat uit /root/output/results.txt uit de database trekken
